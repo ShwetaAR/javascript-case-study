@@ -1,9 +1,11 @@
  module.exports = CokeSong;
 
  function CokeSong(){
+ 	var cansVariable1 ='cans of coke in the box';
+
  	this.verse=function(canNumber){
  		if(canNumber>=2){
- 			return  +canNumber+' cans of coke in the box, '+canNumber+' cans of coke.\nTake one down and pass it around, '+(canNumber-1)+' cans of coke in the box.\n';
+ 			return  +canNumber+' '+cansVariable1+' '+canNumber+' cans of coke.\nTake one down and pass it around, '+(canNumber-1)+' cans of coke in the box.\n';
  		}
  		else if(canNumber==1){
  			return  +canNumber+' can of coke in the box, '+canNumber+' can of coke.\nTake it down and pass it around, no more cans of coke in the box.\n';
@@ -16,8 +18,6 @@
  }
 
  CokeSong.prototype.sing=function(verse1,verse2){
- 	console.log(verse1);
- 	console.log(verse2);
  	 if(verse1==undefined&&verse2==undefined){
  		return 'full song';
 
