@@ -12,7 +12,7 @@ xit('cleans the number', function () {
     expect(phone.number()).toEqual('2234567890');
   });
 
-  it('cleans numbers with multiple spaces', function () {
+  fit('cleans numbers with multiple spaces', function () {
     var phone = new PhoneNumber('223 456   7890   ');
     expect(phone.number()).toEqual('2234567890');
   });
